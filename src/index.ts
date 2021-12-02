@@ -1,12 +1,12 @@
-import * as day1 from './day1'
+import * as days from './days'
 
-const days = { day1 } 
+//const days = { day1 } 
 
 import yargs from 'yargs' 
 import { hideBin } from 'yargs/helpers'
 
 export const runProblem = (day: string, part: string) => {
-    const problem = `day${day}.part${part}`
+    const problem = `days.day${day}.part${part}`
     console.log('Running', problem)
     // tslint:disable-next-line: no-eval
     if (typeof eval(`${problem}`) === 'function') {

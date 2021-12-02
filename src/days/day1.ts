@@ -16,6 +16,18 @@ export const part1 = () => {
 }
 
 export const part2 = () => {
-    const arr = readInput('day1.in').map((entry) => Number(entry))
+    const windowSize = 3
+    let nIncreases = -1
+    let previousWindow = 0
 
+    let i = 0; let j = windowSize
+    while (j <= depths.length) {
+        const windowSum = depths.slice(i, j).reduce((a,b) => a + b)
+        if (windowSum > previousWindow) 
+            nIncreases++
+        previousWindow = windowSum
+        i++; j++
+    }
+
+    return nIncreases
 }

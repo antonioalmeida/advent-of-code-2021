@@ -1,0 +1,22 @@
+{
+  "name": "aoc-2021",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "aoc": "tsc && node build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.14.10",
+    "@types/yargs": "^15.0.11",
+    "tslint": "^6.1.3",
+    "typescript": "^4.1.2"
+  },
+  "dependencies": {
+    "cli-progress": "^3.8.2",
+    "yargs": "^16.2.0"
+  }
+}

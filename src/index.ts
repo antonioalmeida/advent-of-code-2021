@@ -1,7 +1,4 @@
 import * as days from './days'
-
-//const days = { day1 } 
-
 import yargs from 'yargs' 
 import { hideBin } from 'yargs/helpers'
 
@@ -27,7 +24,7 @@ const part: any = argv.part
 
 if (parseInt(day) > Object.keys(days).length || parseInt(day) < 0)
     console.log('Invalid day:', argv.day)
-
-runProblem(day, part)
+else
+    runProblem(day, part)
 
 
